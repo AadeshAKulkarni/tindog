@@ -7,6 +7,9 @@
 #features{
   padding:7%;
   text-align: center;
+  background-color:#FFF;
+  position: relative;
+
 }
 p{
   color:#8f8f8f;
@@ -39,7 +42,7 @@ body{
 }
 
 .fluid-container{
-  padding:3% 15%;
+  padding:3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -71,6 +74,8 @@ body{
 #title-image{
   width:60%;
   transform:rotate(25deg);
+  right:30%;
+  position:absolute;
 }
 
 /* Testimonials */
@@ -104,10 +109,36 @@ body{
 
 /* Pricing */
 #pricing{
-  padding:100px;
+  padding:100px 100px 50px 100px;
   text-align: center;
 }
 
 .pricing-column{
   padding:3% 2%;
+}
+
+@media (max-width:1028px){
+  .title-image{
+    position:static;
+    transform:rotate(0);
+  }
+  #title{
+    text-align:center;
+  }
+}
+/* CTA */
+#cta{
+  color:#FFF;
+  padding:3%;
+  background-color:  #FF4c68;
+  text-align:center;
+}
+/* Footer */
+#footer{
+  margin-top:5%;
+  text-align: center;
+  color:#000;
+}
+.social-icon{
+  margin: 20px 10px;
 }
